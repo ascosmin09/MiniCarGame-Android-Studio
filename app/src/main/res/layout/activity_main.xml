@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/LightSlateGray">
+
+    <!-- creating the 4 buttons as required-->
+    <Button
+        android:id="@+id/idcarmake"
+        android:layout_width="0dp"
+        android:layout_height="181dp"
+        android:text="@string/identify_the_car_make"
+        app:layout_constraintBottom_toTopOf="@+id/hints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        android:backgroundTint="@color/LightGreen"
+        android:textColor="@color/Black"/>
+
+    <Button
+        android:id="@+id/hints"
+        android:layout_width="0dp"
+        android:layout_height="182dp"
+        android:text="@string/hints"
+        app:layout_constraintBottom_toTopOf="@+id/idcarimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idcarmake"
+        android:backgroundTint="@color/LightYellow"
+        android:textColor="@color/Black"/>
+
+    <Button
+        android:id="@+id/idcarimage"
+        android:layout_width="0dp"
+        android:layout_height="181dp"
+        android:text="@string/identify_the_car_image"
+        app:layout_constraintBottom_toTopOf="@+id/advanced"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hints"
+        android:backgroundTint="@color/Orange"
+        android:textColor="@color/Black"/>
+
+    <Button
+        android:id="@+id/advanced"
+        android:layout_width="0dp"
+        android:layout_height="182dp"
+        android:text="@string/advanced_level"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idcarimage"
+        android:backgroundTint="@color/OrangeRed"
+        android:textColor="@color/Black"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

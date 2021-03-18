@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.carsgame">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Carsgame">
+        <activity android:name=".advanced"
+            android:configChanges="screenSize|screenLayout|keyboardHidden"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize">
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- declare the 3rd activity when the third button is pressed -->
+        <!-- set the configChanges so when changes appear it doesn't lose the info -->
+        <activity
+            android:name=".idcarimage"
+            android:configChanges="screenSize|screenLayout|keyboardHidden"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize">
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- declare the first activity when the first button is pressed -->
+        <!-- set the configChanges so when the rotation of the device changes it doesn't lose the info -->
+        <activity
+            android:name=".idcarmake"
+            android:configChanges="screenSize|screenLayout|keyboardHidden"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- declare the main activity when the app button is pressed -->
+        <!-- set the configChanges so when changes appear it doesn't lose the info -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- declare the second activity when the second button is pressed -->
+        <!-- set the configChanges so when changes appear it doesn't lose the info -->
+        <activity
+            android:name=".hint"
+            android:configChanges="screenSize|screenLayout|keyboardHidden"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

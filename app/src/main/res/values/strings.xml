@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Carsgame</string>
+    <string name="identify_the_car_make">Identify the car make</string>
+    <string name="hints">hints</string>
+    <string name="identify_the_car_image">Identify the car image</string>
+    <string name="advanced_level">Advanced Level</string>
+    <string name="SUBMIT">SUBMIT</string>
+    <string name="next">NEXT</string>
+    <string name="_0">0</string>
+    <string name="make_of_the_2nd_car">Make of the 2nd car.</string>
+    <string name="make_of_the_3rd_car">Make of the 3rd car.</string>
+    <string name="make_of_the_first_car">Make of the first car.</string>
+    <string name="score_0">Score:0</string>
+</resources>

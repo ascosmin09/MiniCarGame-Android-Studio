@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advanced"
+    android:background="@color/LightSlateGray">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/score_0"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/car2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/car1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@id/textinput1"
+        app:layout_constraintEnd_toStartOf="@id/car2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/score" />
+
+    <EditText
+        android:id="@+id/textinput1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="8"
+        android:hint="@string/make_of_the_first_car"
+        android:inputType="text"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/correctCar1"
+        app:layout_constraintEnd_toStartOf="@id/textinput2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/car1" />
+
+    <TextView
+        android:id="@+id/correctCar1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="28sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/correctorwrong"
+        app:layout_constraintEnd_toStartOf="@id/correctCar2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textinput1" />
+
+
+    <ImageView
+        android:id="@+id/car2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@id/textinput2"
+        app:layout_constraintEnd_toStartOf="@id/car3"
+        app:layout_constraintStart_toEndOf="@id/car1"
+        app:layout_constraintTop_toBottomOf="@id/score" />
+
+    <EditText
+        android:id="@+id/textinput2"
+        android:inputType="text"
+        android:text=""
+        android:ems="8"
+        android:hint="@string/make_of_the_2nd_car"
+        android:textAlignment="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/correctCar2"
+        app:layout_constraintTop_toBottomOf="@id/car2"
+        app:layout_constraintStart_toEndOf="@id/textinput1"
+        app:layout_constraintEnd_toStartOf="@id/textinput3"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/correctCar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="28sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@id/correctCar3"
+        app:layout_constraintStart_toEndOf="@id/correctCar1"
+        app:layout_constraintBottom_toTopOf="@id/correctorwrong"
+        app:layout_constraintTop_toBottomOf="@id/textinput2"/>
+
+    <ImageView
+        android:id="@+id/car3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@id/textinput3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/car2"
+        app:layout_constraintTop_toBottomOf="@id/score" />
+
+    <EditText
+        android:id="@+id/textinput3"
+        android:inputType="text"
+        android:text=""
+        android:ems="8"
+        android:textAlignment="center"
+        android:hint="@string/make_of_the_3rd_car"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/correctCar3"
+        app:layout_constraintTop_toBottomOf="@id/car3"
+        app:layout_constraintStart_toEndOf="@id/textinput2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/correctCar3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="28sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/correctCar2"
+        app:layout_constraintBottom_toTopOf="@id/buttonAdvanced"
+        app:layout_constraintTop_toBottomOf="@id/textinput3"/>
+
+    <TextView
+        android:id="@+id/correctorwrong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="28sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonAdvanced"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/correctCar1" />
+
+    <Button
+        android:id="@+id/buttonAdvanced"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:text="@string/SUBMIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/correctorwrong"
+        app:layout_constraintTop_toBottomOf="@id/correctCar3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
